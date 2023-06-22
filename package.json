@@ -1,17 +1,19 @@
 {
-  "name": "inquirer-readme-generator",
+  "name": "list-geni",
   "version": "1.0.0",
-  "description": "",
+  "description": "A command line list generator.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest"
   },
+  "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^9.2.7"
+    "inquirer": "^8.2.5"
   },
   "devDependencies": {
-    "jest": "^29.5.0"
+    "jest": "^28.1.3"
   }
 }
