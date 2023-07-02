@@ -63,13 +63,13 @@ const questions = [
   {
     type: 'input',
     message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
-    name: 'imageName1',
+    name: 'imageDesc1',
     validate: isQuesAnswered
   },
   {
     type: 'input',
-    message: 'Include here the image type, eg .png, .jpg, .gif',
-    name: 'imageNameType1',
+    message: 'Include here the full image name, including type',
+    name: 'imageName1',
     validate: isQuesAnswered
   },
   {
@@ -81,7 +81,7 @@ const questions = [
   {
     type: 'input',
     message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
-    name: 'imageDesc',
+    name: 'imageDesc2',
     validate: isQuesAnswered,
     when(answers) {
       return answers.imageConfirm1 === true;
@@ -89,8 +89,8 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Include here the image URL',
-    name: 'imageURL',
+    message: 'Include here the full image name, including type',
+    name: 'imageName2',
     validate: isQuesAnswered,
     when(answers) {
       return answers.imageConfirm1 === true;
@@ -105,7 +105,7 @@ const questions = [
   {
     type: 'input',
     message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
-    name: 'imageDesc',
+    name: 'imageDesc3',
     validate: isQuesAnswered,
     when(answers) {
       return answers.imageConfirm2 === true;
@@ -113,11 +113,35 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Include here the image URL',
-    name: 'imageURL',
+    message: 'Include here the full image name, including type',
+    name: 'imageName3',
     validate: isQuesAnswered,
     when(answers) {
       return answers.imageConfirm2 === true;
+    }
+  },
+  {
+    type: 'confirm',
+    message: 'Do you have another image to include in your README?',
+    name: 'imageConfirm3',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
+    name: 'imageDesc4',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm3 === true;
+    }
+  },
+  {
+    type: 'input',
+    message: 'Include here the full image name, including type',
+    name: 'imageName4',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm3 === true;
     }
   },
   {
@@ -169,4 +193,3 @@ inquirer.prompt(questions)
       console.log('Your READEME file was created!')
    } )
   )
-  

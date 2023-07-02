@@ -59,11 +59,26 @@ ${answers.usageDesc}
 
 ## Visual Description <a id="Visual-Description"></a>
 
-A visual representation of the working application can be seen here:
-[![${answers.imageName1}](assets/images/${answers.imageName1}.${answers.imageNameType1})]
-![${answers.imageName2}](assets/images/${answers.imageName1}.${answers.imageNameType2})
-![${answers.imageName3}](assets/images/${answers.imageName1}.${answers.imageNameType3})
+A visual representation of the working application can be seen here:  
+
+${answers.imageDesc1}  
+
+![${answers.imageDesc1}](assets/images/${answers.imageName1})  
+
+
+${answers.imageDesc2}  
+
+![${answers.imageDesc2}](assets/images/${answers.imageName2})  
+
+
+${answers.imageDesc3}  
+
+![${answers.imageDesc3}](assets/images/${answers.imageName3})  
+
+${answers.imageDesc3}  
   
+![${answers.imageDesc3}](assets/images/${answers.imageName3})  
+
 
 ## Contributors <a id="Contributing"></a>
 
