@@ -62,8 +62,63 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here image Name and file type',
-    name: 'visualDesc',
+    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
+    name: 'imageName1',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'Include here the image type, eg .png, .jpg, .gif',
+    name: 'imageNameType1',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'confirm',
+    message: 'Do you have another image to include in your README?',
+    name: 'imageConfirm1',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
+    name: 'imageDesc',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm1 === true;
+    }
+  },
+  {
+    type: 'input',
+    message: 'Include here the image URL',
+    name: 'imageURL',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm1 === true;
+  }
+},
+  {
+    type: 'confirm',
+    message: 'Do you have another image to include in your README?',
+    name: 'imageConfirm2',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
+    name: 'imageDesc',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm2 === true;
+    }
+  },
+  {
+    type: 'input',
+    message: 'Include here the image URL',
+    name: 'imageURL',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm2 === true;
+    }
   },
   {
     type: 'editor',
@@ -79,7 +134,13 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Who else worked on this project with you? Separate collaborators with a comma.',
+    message: 'What is your emails for additional questions?',
+    name: 'email',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'Who else worked on this project with you?',
     name: 'collaborationDesc',
     validate: isQuesAnswered
   },
@@ -100,8 +161,6 @@ const questions = [
 
 inquirer.prompt(questions)
   .then((answers) =>
-//    answers ? console.log(JSON.stringify(answers))
-//      : console.log('No answers to the questions'));
    fs.writeFile('READEME.md', createMarkdown(answers), 
    err => {
     if(err) {
@@ -110,6 +169,4 @@ inquirer.prompt(questions)
       console.log('Your READEME file was created!')
    } )
   )
-
   
-

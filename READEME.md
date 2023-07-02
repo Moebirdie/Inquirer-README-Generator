@@ -1,46 +1,71 @@
-# ReadMe Generator
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
+# README Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This application is designed for generating a professional README file.. I chose this project because creating a professional README is an important part of a repository..
-The skills used for developing this application include Inquirer, node.js.
 
-I chose these tools because Inquirer is a prompt package that can easily handle the creation of a command line prompt application. 
+Creating a reademe file.. I chose this project because u kuje to code.
+The skills used for developing this application include node.js inquirer, javascript.
 
-Some of the challenges I faced were:
-1. The flexibilty to create more complex scenarios that could potentially be resolved with a different package.
-2. The personal conflict that a good README could be generated via a prompt system.
+easy to se
 
-I am of a strong opinion that a README captures the essence of the developer's project of which intricacies can only be captured when creating a free style README.  A README should be re-worked until the developer feels comfortable that it truly reflects the purpose and skillset of the project.
+
+I don't like to autogenerate a readme
+
+  
 
 ## Table of Contents
+
 1. [Installation](#Installation)
-2. [Usage](#Usage)
-3. [Visual_Description](#Visual%20Description)
-4. [Contributing](#Contributing)
-5. [Tests](#Tests)  
-6. [Questions](#Questions)
-7. [License](#License)
+2. [Features](#Features)
+3. [Usage](#Usage)
+4. [Visual Description](#Visual-Description)
+5. [Contributors](#Contributing)
+6. [Tests](#Tests)  
+7. [Questions](#Questions)
+8. [License](#License)
+  
 
+## Installation <a id="Installation"></a>
 
-## Features
-prompts, editors and lists
+Install npm inquirer.js
+Clone repo
+  
 
-## Usage
-The intention is to quickly and accurately create a professional README.
+## Features <a id="Features"></a>
 
-## Visual Description
+ease of use, prompted 
+  
+
+## Usage <a id="Usage"></a>
+
+sa spuport
+
+  
+
+## Visual Description <a id="Visual-Description"></a>
+
 A visual representation of the working application can be seen here:
-![undefined](assets/images/undefined)
+![questions](assets/images/questions.png)
+![image2](assets/images/image1.undefined)
+![undefined](assets/images/image1.undefined)
+  
 
-## Contributing
-Other users can create a branch and post a pull request.
+## Contributors <a id="Contributing"></a>
 
-## Tests
-The best test of this is to run the application from the terminal prompt by calling node index.js and following the prompts.  Once the message that a README has been created, the user can preview the README to view it.
+pull reques
+  
 
-## Questions
-Questions can be directed to undefined or submitted via my Github account at https://github.com/Moebirdie/Inquirer-README-Generator.
+## Tests <a id="Tests"></a>
 
-## License
-[undefined](https://opensource.org/licenses/undefined)
+none
+
+  
+
+## Questions  <a id="Questions"></a>
+
+Questions can be directed to maureen.business or submitted via my Github account at undefined .
+  
+
+## License <a id="License"></a>
+
+[MIT](https://opensource.org/licenses/MIT)

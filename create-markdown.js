@@ -2,16 +2,16 @@
 
 function licenseBadge(license) {
     if (license === 'MIT') {
-        return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)'
+        return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
     }
     if (license === 'Apache-2.0') {
-        return '![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)'
+        return '[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0'
     }
     if (license === 'GNU General Public License (GPL)') {
-        return '![License: GPL](https://img.shields.io/badge/License-GPLv3-blue.svg)(https://opensource.org/licenses/gpl-3.0)'
+        return '[![License: GPL](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/GPLv3)'
     }
     if (license === 'Mozilla Public License (MPL)') {
-        return '![License: MPL](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)(https://opensource.org/licenses/EPL-1.0)'
+        return '[![License: MPL](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL)'
     }
 }
 
@@ -21,44 +21,68 @@ function createMarkdown(answers) {
 ${licenseBadge(answers.licenseDesc)}
 
 ## Description
+
 ${answers.rmDescription1}. I chose this project because ${answers.rmDescription2}.
 The skills used for developing this application include ${answers.rmDescription3}.
 
 ${answers.rmDescription4}
 
 ${answers.rmDescription5}
+  
 
 ## Table of Contents
+
 1. [Installation](#Installation)
-2. [Usage](#Usage)
-3. [Visual Description](#Visual Description)
-4. [Contributing](#Contributing)
-5. [Tests](#Tests)  
-6. [Questions](#Questions)
-7. [License](#License)
+2. [Features](#Features)
+3. [Usage](#Usage)
+4. [Visual Description](#Visual-Description)
+5. [Contributors](#Contributing)
+6. [Tests](#Tests)  
+7. [Questions](#Questions)
+8. [License](#License)
+  
 
+## Installation <a id="Installation"></a>
 
-## Features
+${answers.installationDesc}
+  
+
+## Features <a id="Features"></a>
+
 ${answers.featuresDesc}
+  
 
-## Usage
+## Usage <a id="Usage"></a>
+
 ${answers.usageDesc}
+  
 
-## Visual Description
+## Visual Description <a id="Visual-Description"></a>
+
 A visual representation of the working application can be seen here:
-![${answers.imageName}](assets/images/${answers.imageNameType})
+[![${answers.imageName1}](assets/images/${answers.imageName1}.${answers.imageNameType1})]
+![${answers.imageName2}](assets/images/${answers.imageName1}.${answers.imageNameType2})
+![${answers.imageName3}](assets/images/${answers.imageName1}.${answers.imageNameType3})
+  
 
-## Contributing
+## Contributors <a id="Contributing"></a>
+
 ${answers.contributingDesc}
+  
 
-## Tests
+## Tests <a id="Tests"></a>
+
 ${answers.testsDesc}
+  
 
-## Questions
-Questions can be directed to ${answers.email} or submitted via my Github account at https://github.com/Moebirdie/Inquirer-README-Generator.
+## Questions  <a id="Questions"></a>
 
-## License
-[${answers.license}](https://opensource.org/licenses/${answers.license})
+Questions can be directed to ${answers.email} or submitted via my Github account at ${answers.github} .
+  
+
+## License <a id="License"></a>
+
+[${answers.licenseDesc}](https://opensource.org/licenses/${answers.licenseDesc})
 `;
 }
 
