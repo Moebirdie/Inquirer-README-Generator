@@ -1,6 +1,6 @@
 const inquirer = require('./node_modules/inquirer');
 const fs = require('fs');
-//const createMarkdown = require('')
+const createMarkdown = require('./create-markdown');
 
 const isQuesAnswered = async (input) => {
   if (input) {
@@ -43,150 +43,153 @@ const questions = [
     name: 'rmDescription5'
   },
   {
-    type: 'checkbox',
-    message: 'Which sections do you wish to include? (RU required sections are already checked.)',
-    name: 'sections',
-    choices: [
-      {
-        name: 'Table of Contents',
-        checked: true
-      },
-      {
-        name: 'Installation',
-        checked: true,
-      },
-      {
-        name: 'Usage',
-        checked: true,
-      },
-      {
-        name: 'Visual Description',
-        checked: true,
-      },
-      {
-        name: 'License',
-        checked: true,
-      },
-      new inquirer.Separator('--- optional ---'),
-      {
-        name: 'Contributing',
-        checked: true,
-      },
-      {
-        name: 'Tests',
-        checked: true,
-      },
-      {
-        name: 'Questions',
-        checked: true,
-      },
-      {
-        name: 'Features',
-      },
-      {
-        name: 'Collaborators',
-      },
-      {
-        name: 'Badges',
-        checked: true,
-      }
-    ]
-  },
-  {
     type: 'input',
     message: 'Please list some of the features of this application separated by commas?',
     name: 'featuresDesc',
-    validate: isQuesAnswered,
-    when(answers) {
-      return (answers.sections).includes('Features');
-    }
+    validate: isQuesAnswered
   },
   {
     type: 'editor',
     message: 'How does a user install this application?',
     name: 'installationDesc',
-    validate: isQuesAnswered,
-    when(answers) {
-      return (answers.sections).includes('Installation');
-    }
+    validate: isQuesAnswered
   },
   {
     type: 'editor',
     message: 'How is this application intended to be used?',
     name: 'usageDesc',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
+    name: 'imageDesc1',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'Include here the full image name, including type',
+    name: 'imageName1',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'confirm',
+    message: 'Do you have another image to include in your README?',
+    name: 'imageConfirm1',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
+    name: 'imageDesc2',
+    validate: isQuesAnswered,
     when(answers) {
-      return (answers.sections).includes('Usage');
+      return answers.imageConfirm1 === true;
     }
   },
   {
     type: 'input',
-    message: 'For a visual description, please include links to images or videos that have been uploaded, separated by commas.',
-    name: 'visualDesc',
+    message: 'Include here the full image name, including type',
+    name: 'imageName2',
+    validate: isQuesAnswered,
     when(answers) {
-      return (answers.sections).includes('Visual Description');
+      return answers.imageConfirm1 === true;
+  }
+},
+  {
+    type: 'confirm',
+    message: 'Do you have another image to include in your README?',
+    name: 'imageConfirm2',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
+    name: 'imageDesc3',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm2 === true;
+    }
+  },
+  {
+    type: 'input',
+    message: 'Include here the full image name, including type',
+    name: 'imageName3',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm2 === true;
+    }
+  },
+  {
+    type: 'confirm',
+    message: 'Do you have another image to include in your README?',
+    name: 'imageConfirm3',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
+    name: 'imageDesc4',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm3 === true;
+    }
+  },
+  {
+    type: 'input',
+    message: 'Include here the full image name, including type',
+    name: 'imageName4',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm3 === true;
     }
   },
   {
     type: 'editor',
     message: 'What tests can be performed on this application?',
-    name: 'testingDesc',
-    when(answers) {
-      return (answers.sections).includes('Testing');
-    }
+    name: 'testsDesc',
+    validate: isQuesAnswered
   },
   {
     type: 'input',
     message: 'What is your Github for users to ask questions?',
     name: 'questionsDesc',
-    when(answers) {
-      return (answers.sections).includes('Questions');
-    }
+    validate: isQuesAnswered
   },
   {
     type: 'input',
-    message: 'Who else worked on this project with you? Separate collaborators with a comma.',
+    message: 'What is your emails for additional questions?',
+    name: 'email',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
+    message: 'Who else worked on this project with you?',
     name: 'collaborationDesc',
-    when(answers) {
-      return (answers.sections).includes('Collaboration');
-    }
+    validate: isQuesAnswered
   },
   {
     type: 'input',
     message: 'How can other developers contribute to this application?',
     name: 'contributingDesc',
-    when(answers) {
-      return (answers.sections).includes('Contributing');
-    }
+    validate: isQuesAnswered
   },
   {
     type: 'list',
     message: 'Choose a license to be used for this application',
     name: 'licenseDesc',
-    choices: ['MIT', 'Mozilla Public License(MPL)'],
-    when(answers) {
-      return (answers.sections).includes('License');
-    }
-  },
-  {
-    type: 'editor',
-    message: 'Badges Description',
-    name: 'badgesDesc',
-    when(answers) {
-      return (answers.sections).includes('Badges');
-    }
+    choices: ['Apache-2.0','GNU General Public License (GPL)','MIT', 'Mozilla Public License (MPL)'],
+    validate: isQuesAnswered
   },
 ];
 
 inquirer.prompt(questions)
   .then((answers) =>
-//    answers ? console.log(JSON.stringify(answers))
-//      : console.log('No answers to the questions'));
    fs.writeFile('READEME.md', createMarkdown(answers), 
-   error => {
-    if(error) {
-      console.error(error) 
+   err => {
+    if(err) {
+      console.error(err) 
     }
       console.log('Your READEME file was created!')
    } )
   )
-
