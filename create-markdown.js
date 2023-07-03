@@ -15,6 +15,68 @@ function licenseBadge(license) {
     }
 }
 
+function insertImage1(answers) {
+    image = answers.imageName1;
+    desc = answers.imageDesc1;
+    imageData = '![desc](assets/images/' + image + ')'
+    if (answers.imageDesc1) {
+        return `${desc}  
+
+${imageData}`
+    } else {
+        return ""
+    }
+}
+function insertImage2(answers) {
+    image = answers.imageName2;
+    desc = answers.imageDesc2;
+    imageData = '![desc](assets/images/' + image + ')'
+    if (answers.imageDesc2) {
+        return `${desc}  
+
+${imageData}`
+    } else {
+        return ""
+    }
+}
+function insertImage3(answers) {
+    image = answers.imageName3;
+    desc = answers.imageDesc3;
+    imageData = '![desc](assets/images/' + image + ')'
+    if (answers.imageDesc3) {
+        return `${desc}  
+
+${imageData}`
+    } else {
+        return ""
+    }
+}
+
+function insertImage4(answers) {
+    image = answers.imageName4;
+    desc = answers.imageDesc4;
+    imageData = '![desc](assets/images/' + image + ')'
+    if (answers.imageDesc4) {
+        return `${desc}  
+
+${imageData}`
+    } else {
+        return ""
+    }
+}
+
+function insertImage5(answers) {
+    image = answers.imageName5;
+    desc = answers.imageDesc5;
+    imageData = '![desc](assets/images/' + image + ')'
+    if (answers.imageDesc5) {
+        return `${desc}  
+
+${imageData}`
+    } else {
+        return ""
+    }
+}
 
 function createMarkdown(answers) {
     return `# ${answers.rmTitle}
@@ -61,24 +123,15 @@ ${answers.usageDesc}
 
 A visual representation of the working application can be seen here:  
 
-${answers.imageDesc1}  
+${insertImage1(answers)}  
 
-![${answers.imageDesc1}](assets/images/${answers.imageName1})  
+${insertImage2(answers)}  
 
+${insertImage3(answers)}  
 
-${answers.imageDesc2}  
+${insertImage4(answers)}  
 
-![${answers.imageDesc2}](assets/images/${answers.imageName2})  
-
-
-${answers.imageDesc3}  
-
-![${answers.imageDesc3}](assets/images/${answers.imageName3})  
-
-${answers.imageDesc3}  
-  
-![${answers.imageDesc3}](assets/images/${answers.imageName3})  
-
+${insertImage5(answers)}  
 
 ## Contributors <a id="Contributing"></a>
 
@@ -92,7 +145,7 @@ ${answers.testsDesc}
 
 ## Questions  <a id="Questions"></a>
 
-Questions can be directed to ${answers.email} or submitted via my Github account at ${answers.github} .
+Questions can be directed to ${answers.email} or submitted via my Github account at [${answers.github}](${answers.github}).
   
 
 ## License <a id="License"></a>
