@@ -55,7 +55,7 @@ A visual representation of the working application may be seen here:
 
 ![desc](assets/images/enduserinput.png)  
 
-### Title and Description example  
+### Title and Description example:  
 
 ![desc](assets/images/TitleDescription.png)  
 
