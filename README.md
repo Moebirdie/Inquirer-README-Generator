@@ -12,7 +12,7 @@ I chose these tools because Inquirer is a prompt based package and believe that 
 I faced many challenges creating this application.  The basic technology was not an issue, but wanting to manipulate Inquirer beyond it's capabilities was an issue for me. It did bring to my attention that one package may not always solve your every need. I am of a strong opinion that a README should not just be a standardized list of questions answered with each creation of an application, but should enhance the end user's understanding of the application. For example, I feel strongly that a good README should always have a visual description for readers who conceptualize better via visual representation. For this reason, I allowed the user to input up to five images. On the other hand, I used an editor prompt for the why and challenges section of the project because the answers for these questions can't be standardized short inputs if the README is to be used by the reader to assess whether this project correlates to what they are looking for. This is a great tool for setting up your first draft of the README file for any repository which can then be edited to create the final README.   
 
 
-Link to video recording: [Video Recording](https://watch.screencastify.com/v/meDs6zAD7yQitMPWUEPn)
+Link to video recording: [Video Recording](https://watch.screencastify.com/v/FQHnwyv1kiamS1cnZAFX)  
 Link to live README: [https://moebirdie.github.io/Inquirer-README-Generator/](https://moebirdie.github.io/Inquirer-README-Generator/)
 
 
@@ -70,7 +70,7 @@ A visual representation of the working application may be seen here:
 
 ### Logic for writing Images:  
 
-![desc](assets/images/writeimagelogic.png)  
+![desc](assets/images/writeimageslogic.png)  
 
 ### When Functions:  
 
