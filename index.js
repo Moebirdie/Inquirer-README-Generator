@@ -62,14 +62,20 @@ const questions = [
   },
   {
     type: 'input',
+    message: 'Include here the full image name, including type, of your user experience image',
+    name: 'imageName1',
+    validate: isQuesAnswered
+  },
+  {
+    type: 'input',
     message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
-    name: 'imageDesc1',
+    name: 'imageDesc1a',
     validate: isQuesAnswered
   },
   {
     type: 'input',
     message: 'Include here the full image name, including type',
-    name: 'imageName1',
+    name: 'imageName1a',
     validate: isQuesAnswered
   },
   {
