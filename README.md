@@ -55,25 +55,22 @@ A visual representation of the working application may be seen here:
 
 ![desc](assets/images/enduserinput.png)  
 
-### Title and Description example:  
+### Required Package Files:  
 
-![desc](assets/images/TitleDescription.png)  
+![desc](assets/images/requiredfiles.png)  
 
-### Table of Contents, Features and Usage:  
+### Required Answers:  
 
-![desc](assets/images/TOC.png)  
+![desc](assets/images/requiredans.png)  
 
-### Visual Description 1:  
+### Logic for writing Images:  
 
-![desc](assets/images/visual1.png)  
+![desc](assets/images/writeimageslogic.png)  
 
-### Visual Description 2:  
+### When Function examples:  
 
-![desc](assets/images/visual2.png)  
+![desc](assets/images/whenfunctions.png)  
 
-Contributions, Questions and Licensing.  
-
-![desc](assets/images/contributorsques.png)  
 
 A walkthrough video of the product may be viewed here: INSERT VIDEO HERE
 
