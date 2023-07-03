@@ -225,6 +225,6 @@ inquirer.prompt(questions)
         if (err) {
           console.error(err)
         }
-        console.log('Your READEME file was created!')
+        console.log('Your README file was created!')
       })
   )
