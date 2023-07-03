@@ -51,23 +51,23 @@ This application is intended to be used by an end user to create a professional 
 
 A visual representation of the working application may be seen here:  
 
-User Input Experience:   
+### User Input Experience:   
 
 ![desc](assets/images/enduserinput.png)  
 
-Title and Description example  
+### Title and Description example  
 
 ![desc](assets/images/TitleDescription.png)  
 
-Table of Contents, Features and Usage:  
+### Table of Contents, Features and Usage:  
 
 ![desc](assets/images/TOC.png)  
 
-Final README Visual Description 1:  
+### Visual Description 1:  
 
 ![desc](assets/images/visual1.png)  
 
-Final READEME Description 2:  
+### Visual Description 2:  
 
 ![desc](assets/images/visual2.png)  
 
