@@ -91,8 +91,10 @@ ${answers.rmDescription4}
 
 ${answers.rmDescription5}  
 
-Link to live README [https://moebirdie.github.io/Inquirer-README-Generator/](https://moebirdie.github.io/Inquirer-README-Generator/).
-  
+
+Link to video recording: [Video Recording](https://watch.screencastify.com/v/meDs6zAD7yQitMPWUEPn)
+Link to live README: [https://moebirdie.github.io/Inquirer-README-Generator/](https://moebirdie.github.io/Inquirer-README-Generator/)
+
 
 ## Table of Contents
 
@@ -135,7 +137,6 @@ ${insertImage4(answers)}
 
 ${insertImage5(answers)}  
 
-A walkthrough video of the product may be viewed here: INSERT VIDEO HERE
 
 ## Contributors <a id="Contributing"></a>
 
