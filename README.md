@@ -46,6 +46,7 @@ Features exhibited in this application include simple question prompts, editor p
 ## Usage <a id="Usage"></a>
 
 This application is intended to be used by an end user to create a professional README file.  By prompting the user to answer questions, the end user is ensured to produce all the necessary elements of a good README file.  The user is expected to answer questions, then the questions are used by the create README file and a README is created in the repository.
+
   
 
 ## Visual Description <a id="Visual-Description"></a>
@@ -64,13 +65,7 @@ A visual representation of the working application may be seen here:
 
 ![desc](assets/images/requiredans.png)  
 
-![desc](assets/images/requiredfiles.png)  
-
-### Required Answers:  
-
-![desc](assets/images/requiredans.png)  
-
-### Logic for writing Image:  
+### Logic for writing Images:  
 
 ![desc](assets/images/writeimagelogic.png)  
 
@@ -78,6 +73,7 @@ A visual representation of the working application may be seen here:
 
 ![desc](assets/images/whenfunctions.png)  
 
+A walkthrough video of the product may be viewed here: INSERT VIDEO HERE
 
 ## Contributors <a id="Contributing"></a>
 
@@ -86,7 +82,7 @@ Any user can create a branch, commit their changes and create a pull request to 
 
 ## Tests <a id="Tests"></a>
 
-A user may test this application by installing it and invoking node index.js.  This will create a README file.
+This can be tested by installing the README Generator from the repository and invoking node index.js at the command prompt.
   
 
 ## Questions  <a id="Questions"></a>
