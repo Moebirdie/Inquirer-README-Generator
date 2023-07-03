@@ -8,7 +8,8 @@ The skills used for developing this application include node.js, inquirer packag
 
 I chose these tools because Inquirer is a prompt based package and believe that prompt based technology is the best type of package to use to simplify the process for an end user. Node.js is a powerful command line tool that enables us to utilize the Inquirer package.  Within the Inquirer package I used the input prompt, editor prompt, confirm prompt, conditional statements and list prompt.  
 
-I faced many challenges creating this application.  The basic technology was not an issue, but wanting to manipulate Inquirer beyond it's capabilities was an issue for me.  I had difficulties staying within scope to create a simple README file where one size fits all. I am of a strong opinion that a README should not just be a standardized list of questions answered with each creation of an application, but should enhance the end user's understanding of the application. For example, I feel strongly that a good README should always have a visual description for readers who conceptualize better via visual representation.  On the other hand, I used an editor prompt for the why and challenges section of the project because the communication of these is critical to the reader to assess whether this project correlates to what they are looking for.  Although using Inquirer assisted in the creation of a README, I felt I was somewhat limited with the resulting diversity in the outcome of my README.  This is a purely personal opinion and not a criticism of any package.
+I faced many challenges creating this application.  The basic technology was not an issue, but wanting to manipulate Inquirer beyond it's capabilities was an issue for me. It id bring to my attention that one package may not always solve your every need. I am of a strong opinion that a README should not just be a standardized list of questions answered with each creation of an application, but should enhance the end user's understanding of the application. For example, I feel strongly that a good README should always have a visual description for readers who conceptualize better via visual representation. For this reason, I allowed the user to input up to five images. On the other hand, I used an editor prompt for the why and challenges section of the project because the answers for these questions can't be standardized short inputs if the README is to be used by the reader to assess whether this project correlates to what they are looking for. This is a great tool for setting up your first draft of the README which can then be edited to create the final README. Although using Inquirer assisted in the creation of a README, I felt I was somewhat limited with the resulting diversity in the outcome of my README. This is a purely personal opinion and not a criticism of any package.
+
   
 
 ## Table of Contents
@@ -30,11 +31,12 @@ A user installs this application by:
 	2. Installing Node.js
 	3. Installing Inqirer.js 
 
+
   
 
 ## Features <a id="Features"></a>
 
-simple question prompts, editor prompts to enable paragraph style input and automated README generation. 
+simple question prompts, editor prompts to enable paragraph style input and automated README generation.
   
 
 ## Usage <a id="Usage"></a>
@@ -46,31 +48,35 @@ This application is intended to be used by an end user to create a professional 
 
 A visual representation of the working application can be seen here:  
 
-Required package inclusion  
-![Required package inclusion](assets/images/requiredfiles.png)
+Files to include in your application:  
 
+![desc](assets/images/requiredfiles.png)  
 
-Conditional statement example  
-![Conditional statement example](assets/images/conditionalstatement.png)  
+Required answers function:  
 
+![desc](assets/images/requiredans.png)  
 
-undefined  
-![undefined](assets/images/undefined)  
+End user experience:  
 
+![desc](assets/images/enduserinput.png)  
+
+  
+
+  
 
 ## Contributors <a id="Contributing"></a>
 
-Other users can create a branch, commit their changes and create a pull request to be reviewed.
+Any user can create a branch, commit their changes and create a pull request to be reviewed. All contributions are welcome!
   
 
 ## Tests <a id="Tests"></a>
 
-The best test for this application is to run it in the command prompt by typing node index.js
+The best test for this application is to run it in the command prompt by invoking node index.js
   
 
 ## Questions  <a id="Questions"></a>
 
-Questions can be directed to maureen.business@gmail.com or submitted via my Github account at undefined .
+Questions can be directed to maureen.business@gmail.com or submitted via my Github account at [https://github.com/Moebirdie/Inquirer-README-Generator](https://github.com/Moebirdie/Inquirer-README-Generator).
   
 
 ## License <a id="License"></a>

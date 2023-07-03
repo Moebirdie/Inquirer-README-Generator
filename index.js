@@ -94,13 +94,16 @@ const questions = [
     validate: isQuesAnswered,
     when(answers) {
       return answers.imageConfirm1 === true;
-  }
-},
+    }
+  },
   {
     type: 'confirm',
     message: 'Do you have another image to include in your README?',
     name: 'imageConfirm2',
-    validate: isQuesAnswered
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm1 === true;
+    }
   },
   {
     type: 'input',
@@ -124,7 +127,10 @@ const questions = [
     type: 'confirm',
     message: 'Do you have another image to include in your README?',
     name: 'imageConfirm3',
-    validate: isQuesAnswered
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm2 === true;
+    }
   },
   {
     type: 'input',
@@ -145,6 +151,34 @@ const questions = [
     }
   },
   {
+    type: 'confirm',
+    message: 'Do you have another image to include in your README?',
+    name: 'imageConfirm4',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm3 === true;
+    }
+  },
+  {
+    type: 'input',
+    message: 'For a visual description, please be sure images are loaded into assets/images.  Include here your image description',
+    name: 'imageDesc5',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm4 === true;
+    }
+  },
+  {
+    type: 'input',
+    message: 'Include here the full image name, including type',
+    name: 'imageName5',
+    validate: isQuesAnswered,
+    when(answers) {
+      return answers.imageConfirm4 === true;
+    }
+  },
+
+  {
     type: 'editor',
     message: 'What tests can be performed on this application?',
     name: 'testsDesc',
@@ -153,7 +187,7 @@ const questions = [
   {
     type: 'input',
     message: 'What is your Github for users to ask questions?',
-    name: 'questionsDesc',
+    name: 'github',
     validate: isQuesAnswered
   },
   {
@@ -178,18 +212,19 @@ const questions = [
     type: 'list',
     message: 'Choose a license to be used for this application',
     name: 'licenseDesc',
-    choices: ['Apache-2.0','GNU General Public License (GPL)','MIT', 'Mozilla Public License (MPL)'],
+    choices: ['Apache-2.0', 'GNU General Public License (GPL)', 'MIT', 'Mozilla Public License (MPL)'],
     validate: isQuesAnswered
   },
 ];
 
 inquirer.prompt(questions)
   .then((answers) =>
-   fs.writeFile('READEME.md', createMarkdown(answers), 
-   err => {
-    if(err) {
-      console.error(err) 
-    }
-      console.log('Your READEME file was created!')
-   } )
+
+    fs.writeFile('READEME.md', createMarkdown(answers),
+      err => {
+        if (err) {
+          console.error(err)
+        }
+        console.log('Your READEME file was created!')
+      })
   )
