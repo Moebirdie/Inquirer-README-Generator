@@ -20,7 +20,7 @@ function insertImage1(answers) {
     desc = answers.imageDesc1;
     imageData = '![desc](assets/images/' + image + ')'
     if (answers.imageName1) {
-        return `User Input Experience:   
+        return `### User Input Experience:   
 
 ${imageData}`
     } else {
@@ -32,7 +32,7 @@ function insertImage1a(answers) {
     desc = answers.imageDesc1a;
     imageData = '![desc](assets/images/' + image + ')'
     if (answers.imageDesc1a) {
-        return `${desc}  
+        return `### ${desc}  
 
 ${imageData}`
     } else {
@@ -44,7 +44,7 @@ function insertImage2(answers) {
     desc = answers.imageDesc2;
     imageData = '![desc](assets/images/' + image + ')'
     if (answers.imageDesc2) {
-        return `${desc}  
+        return `### ${desc}  
 
 ${imageData}`
     } else {
@@ -56,7 +56,7 @@ function insertImage3(answers) {
     desc = answers.imageDesc3;
     imageData = '![desc](assets/images/' + image + ')'
     if (answers.imageDesc3) {
-        return `${desc}  
+        return `### ${desc}  
 
 ${imageData}`
     } else {
@@ -69,7 +69,7 @@ function insertImage4(answers) {
     desc = answers.imageDesc4;
     imageData = '![desc](assets/images/' + image + ')'
     if (answers.imageDesc4) {
-        return `${desc}  
+        return `### ${desc}  
 
 ${imageData}`
     } else {
@@ -82,7 +82,7 @@ function insertImage5(answers) {
     desc = answers.imageDesc5;
     imageData = '![desc](assets/images/' + image + ')'
     if (answers.imageDesc5) {
-        return `${desc}  
+        return `### ${desc}  
 
 ${imageData}`
     } else {
@@ -101,7 +101,9 @@ The skills used for developing this application include ${answers.rmDescription3
 
 ${answers.rmDescription4}
 
-${answers.rmDescription5}
+${answers.rmDescription5}  
+
+Link to live README [https://moebirdie.github.io/Inquirer-README-Generator/](https://moebirdie.github.io/Inquirer-README-Generator/).
   
 
 ## Table of Contents
