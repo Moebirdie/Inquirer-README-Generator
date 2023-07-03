@@ -64,7 +64,7 @@ A visual representation of the working application may be seen here:
 
 ![desc](assets/images/requiredans.png)  
 
-### Logic for writing Images:  
+### Logic for writing Image:  
 
 ![desc](assets/images/writeimagelogic.png)  
 

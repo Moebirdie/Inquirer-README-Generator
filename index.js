@@ -192,7 +192,7 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'What is your emails for additional questions?',
+    message: 'What is your email for additional questions?',
     name: 'email',
     validate: isQuesAnswered
   },
