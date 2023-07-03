@@ -19,7 +19,19 @@ function insertImage1(answers) {
     image = answers.imageName1;
     desc = answers.imageDesc1;
     imageData = '![desc](assets/images/' + image + ')'
-    if (answers.imageDesc1) {
+    if (answers.imageName1) {
+        return `User Input Experience:   
+
+${imageData}`
+    } else {
+        return ""
+    }
+}
+function insertImage1a(answers) {
+    image = answers.imageName1a;
+    desc = answers.imageDesc1a;
+    imageData = '![desc](assets/images/' + image + ')'
+    if (answers.imageDesc1a) {
         return `${desc}  
 
 ${imageData}`
@@ -111,7 +123,7 @@ ${answers.installationDesc}
 
 ## Features <a id="Features"></a>
 
-${answers.featuresDesc}
+Features exhibited in this application include ${answers.featuresDesc}.
   
 
 ## Usage <a id="Usage"></a>
@@ -121,9 +133,11 @@ ${answers.usageDesc}
 
 ## Visual Description <a id="Visual-Description"></a>
 
-A visual representation of the working application can be seen here:  
+A visual representation of the working application may be seen here:  
 
 ${insertImage1(answers)}  
+
+${insertImage1a(answers)}  
 
 ${insertImage2(answers)}  
 
@@ -132,6 +146,8 @@ ${insertImage3(answers)}
 ${insertImage4(answers)}  
 
 ${insertImage5(answers)}  
+
+A walkthrough video of the product may be viewed here: INSERT VIDEO HERE
 
 ## Contributors <a id="Contributing"></a>
 
