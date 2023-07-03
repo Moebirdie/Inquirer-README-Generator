@@ -72,7 +72,14 @@ A visual representation of the working application may be seen here:
 ![desc](assets/images/whenfunctions.png)  
 
 
-A walkthrough video of the product may be viewed here: INSERT VIDEO HERE
+A walkthrough video of the product may be viewed here:  
+
+[Video Walkthrough](https://watch.screencastify.com/v/5v3yNv7yr4HKMC7FJWs1)  
+
+The generated README can be found here:  
+
+[Generated README file](https://moebirdie.github.io/Inquirer-README-Generator)
+
 
 ## Contributors <a id="Contributing"></a>
 
