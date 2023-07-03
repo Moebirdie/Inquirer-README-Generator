@@ -6,9 +6,11 @@
 This application was designed to create a professional README file for a gitHub repository.. I chose this project because every good repository/project needs a professional README file..
 The skills used for developing this application include node.js, inquirer package, screencastify and an understanding of process flow..
 
-I chose these tools because Inquirer is a prompt based package and believe that prompt based technology is the best type of package to use to simplify the process for an end user. Node.js is a powerful command line tool that enables us to utilize the Inquirer package.  Within the Inquirer package I used the input prompt, editor prompt, confirm prompt, conditional statements and list prompt. 
+I chose these tools because Inquirer is a prompt based package and believe that prompt based technology is the best type of package to use to simplify the process for an end user. Node.js is a powerful command line tool that enables us to utilize the Inquirer package.  Within the Inquirer package I used the input prompt, editor prompt, confirm prompt, conditional statements and list prompt.  
 
-I faced many challenges creating this application.  The basic technology was not an issue, but wanting to manipulate Inquirer beyond it's capabilities was an issue for me. It did bring to my attention that one package may not always solve your every need. I am of a strong opinion that a README should not just be a standardized list of questions answered with each creation of an application, but should enhance the end user's understanding of the application. For example, I feel strongly that a good README should always have a visual description for readers who conceptualize better via visual representation. For this reason, I allowed the user to input up to five images. On the other hand, I used an editor prompt for the why and challenges section of the project because the answers for these questions can't be standardized short inputs if the README is to be used by the reader to assess whether this project correlates to what they are looking for. This is a great tool for setting up your first draft of the README file for anyu repository which can then be edited to create the final README. 
+I faced many challenges creating this application.  The basic technology was not an issue, but wanting to manipulate Inquirer beyond it's capabilities was an issue for me. It did bring to my attention that one package may not always solve your every need. I am of a strong opinion that a README should not just be a standardized list of questions answered with each creation of an application, but should enhance the end user's understanding of the application. For example, I feel strongly that a good README should always have a visual description for readers who conceptualize better via visual representation. For this reason, I allowed the user to input up to five images. On the other hand, I used an editor prompt for the why and challenges section of the project because the answers for these questions can't be standardized short inputs if the README is to be used by the reader to assess whether this project correlates to what they are looking for. This is a great tool for setting up your first draft of the README file for any repository which can then be edited to create the final README.   
+
+Link to live README [https://moebirdie.github.io/Inquirer-README-Generator/](https://moebirdie.github.io/Inquirer-README-Generator/).
   
 
 ## Table of Contents
@@ -31,8 +33,7 @@ A user installs this application by:
 
 	2. Installing Node.js  
 
-	3. Installing Inqirer.js  
-
+	3. Installing Inqirer.js 
 
 
   
@@ -51,29 +52,25 @@ This application is intended to be used by an end user to create a professional 
 
 A visual representation of the working application may be seen here:  
 
-User Input Experience:   
+### User Experience     
 
 ![desc](assets/images/enduserinput.png)  
 
-Title and Description example  
+### Required Package Files:  
 
-![desc](assets/images/TitleDescription.png)  
+![desc](assets/images/requiredfiles.png)  
 
-Table of Contents, Features and Usage:  
+### Required Answers:  
 
-![desc](assets/images/TOC.png)  
+![desc](assets/images/requiredans.png)  
 
-Final README Visual Description 1:  
+### Logic for writing Images:  
 
-![desc](assets/images/visual1.png)  
+![desc](assets/images/writeimagelogic.png)  
 
-Final READEME Description 2:  
+### When Functions:  
 
-![desc](assets/images/visual2.png)  
-
-Contributions, Questions and Licensing.  
-
-![desc](assets/images/contributorsques.png)  
+![desc](assets/images/whenfunctions.png)  
 
 A walkthrough video of the product may be viewed here: INSERT VIDEO HERE
 
@@ -84,7 +81,7 @@ Any user can create a branch, commit their changes and create a pull request to 
 
 ## Tests <a id="Tests"></a>
 
-The best test for this application is to run it in the command prompt by invoking node index.js
+A user may test this application by installing it and invoking node index.js.  This will create a README file.
   
 
 ## Questions  <a id="Questions"></a>
