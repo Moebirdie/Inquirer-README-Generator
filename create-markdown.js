@@ -20,19 +20,7 @@ function insertImage1(answers) {
     desc = answers.imageDesc1;
     imageData = '![desc](assets/images/' + image + ')'
     if (answers.imageName1) {
-        return `### User Input Experience:   
-
-${imageData}`
-    } else {
-        return ""
-    }
-}
-function insertImage1a(answers) {
-    image = answers.imageName1a;
-    desc = answers.imageDesc1a;
-    imageData = '![desc](assets/images/' + image + ')'
-    if (answers.imageDesc1a) {
-        return `### ${desc}  
+        return `### ${desc}     
 
 ${imageData}`
     } else {
@@ -138,8 +126,6 @@ ${answers.usageDesc}
 A visual representation of the working application may be seen here:  
 
 ${insertImage1(answers)}  
-
-${insertImage1a(answers)}  
 
 ${insertImage2(answers)}  
 
