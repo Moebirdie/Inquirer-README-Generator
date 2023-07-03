@@ -220,7 +220,7 @@ const questions = [
 inquirer.prompt(questions)
   .then((answers) =>
 
-    fs.writeFile('READEME.md', createMarkdown(answers),
+    fs.writeFile('README.md', createMarkdown(answers),
       err => {
         if (err) {
           console.error(err)
